@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block title %}  Norah's Blogs {% endblock %}
+
+{% block content %}
+    <p><a href="/">Home</a> || <a href="/users/">Users</a> || <a href="/blogs/">Blogs</a> || <a href="/comments/">Comments</a> || <a href="#">Categories</a></p>
+
+  <h1>The Categories</h1>
+    <ul>
+    {% for x in mycategory %}
+      <li>{{ x.name }}</li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
